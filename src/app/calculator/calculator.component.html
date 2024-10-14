@@ -1,0 +1,33 @@
+<div class="max-w-xs mx-auto mt-10 p-4 bg-gray-800 rounded-lg shadow-lg">
+    <h1 class="text-white text-3xl text-center mb-4">Calculadora</h1>
+    <div class="flex justify-end mb-4">
+      <input
+        type="text"
+        class="w-full p-2 text-2xl bg-gray-900 text-white rounded-lg border border-gray-700 shadow-inner focus:outline-none focus:ring focus:ring-blue-500"
+        [value]="currentInput"
+        readonly
+      />
+    </div>
+    <div class="grid grid-cols-4 gap-2">
+      <button (click)="clear()" class="bg-blue-600 text-white p-4 rounded-lg shadow hover:bg-blue-700 transition transform hover:scale-105">C</button>
+      <button (click)="appendNumber('1')" class="bg-gray-700 text-white p-4 rounded-lg shadow hover:bg-gray-600 transition transform hover:scale-105">1</button>
+      <button (click)="appendNumber('2')" class="bg-gray-700 text-white p-4 rounded-lg shadow hover:bg-gray-600 transition transform hover:scale-105">2</button>
+      <button (click)="appendNumber('3')" class="bg-gray-700 text-white p-4 rounded-lg shadow hover:bg-gray-600 transition transform hover:scale-105">3</button>
+      <button (click)="chooseOperator('+')" class="bg-blue-600 text-white p-4 rounded-lg shadow hover:bg-blue-700 transition transform hover:scale-105">+</button>
+  
+      <button (click)="appendNumber('4')" class="bg-gray-700 text-white p-4 rounded-lg shadow hover:bg-gray-600 transition transform hover:scale-105">4</button>
+      <button (click)="appendNumber('5')" class="bg-gray-700 text-white p-4 rounded-lg shadow hover:bg-gray-600 transition transform hover:scale-105">5</button>
+      <button (click)="appendNumber('6')" class="bg-gray-700 text-white p-4 rounded-lg shadow hover:bg-gray-600 transition transform hover:scale-105">6</button>
+      <button (click)="chooseOperator('-')" class="bg-blue-600 text-white p-4 rounded-lg shadow hover:bg-blue-700 transition transform hover:scale-105">-</button>
+  
+      <button (click)="appendNumber('7')" class="bg-gray-700 text-white p-4 rounded-lg shadow hover:bg-gray-600 transition transform hover:scale-105">7</button>
+      <button (click)="appendNumber('8')" class="bg-gray-700 text-white p-4 rounded-lg shadow hover:bg-gray-600 transition transform hover:scale-105">8</button>
+      <button (click)="appendNumber('9')" class="bg-gray-700 text-white p-4 rounded-lg shadow hover:bg-gray-600 transition transform hover:scale-105">9</button>
+      <button (click)="chooseOperator('*')" class="bg-blue-600 text-white p-4 rounded-lg shadow hover:bg-blue-700 transition transform hover:scale-105">×</button>
+  
+      <button (click)="appendNumber('0')" class="bg-gray-700 text-white p-4 rounded-lg shadow hover:bg-gray-600 transition transform hover:scale-105 col-span-2">0</button>
+      <button (click)="compute()" class="bg-blue-600 text-white p-4 rounded-lg shadow hover:bg-blue-700 transition transform hover:scale-105">=</button>
+      <button (click)="chooseOperator('/')" class="bg-blue-600 text-white p-4 rounded-lg shadow hover:bg-blue-700 transition transform hover:scale-105">÷</button>
+    </div>
+  </div>
+  
